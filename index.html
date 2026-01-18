@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Baju Farel</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+header{
+    background:#111827;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+}
+header p{
+    margin-top:8px;
+    font-size:14px;
+    color:#d1d5db;
+}
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:20px;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+.product{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.08);
+    text-align:center;
+}
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.product h3{
+    margin:15px 0 5px;
+}
+.price{
+    color:#16a34a;
+    font-size:18px;
+    font-weight:bold;
+}
+.product p{
+    font-size:14px;
+    line-height:1.6;
+}
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:10px 18px;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+.btn:hover{
+    background:#15803d;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:13px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Toko Baju Farel</h1>
+    <p>Baju Kekinian • Harga Terjangkau</p>
+</header>
+
+<div class="container">
+    <div class="products">
+
+        <!-- Produk 1 -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Kaos Polos">
+            <h3>Kaos Polos Premium</h3>
+            <div class="price">Rp 50.000</div>
+            <p>Kaos polos berbahan cotton combed, nyaman dipakai sehari-hari.</p>
+            <a class="btn" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20pesan%20Kaos%20Polos%20Premium">
+                Pesan via WhatsApp
+            </a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Hoodie">
+            <h3>Hoodie Hitam</h3>
+            <div class="price">Rp 120.000</div>
+            <p>Hoodie tebal dan hangat, cocok untuk cuaca dingin.</p>
+            <a class="btn" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20pesan%20Hoodie%20Hitam">
+                Pesan via WhatsApp
+            </a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475" alt="Kemeja">
+            <h3>Kemeja Casual</h3>
+            <div class="price">Rp 95.000</div>
+            <p>Kemeja santai cocok untuk acara formal maupun nongkrong.</p>
+            <a class="btn" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20pesan%20Kemeja%20Casual">
+                Pesan via WhatsApp
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 | Toko Baju Farel
+</footer>
+
+</body>
+</html>
